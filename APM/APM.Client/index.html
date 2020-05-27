@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>APM title</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="app/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-include="'app/layout/nav.html'"></div>
+    <div class="container body-content">
+        <div ui-view></div>
+        <hr />
+        <footer ng-include="'app/layout/footer.html'"></footer>
+    </div>
+
+    <!-- scripts -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-ui-router.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+
+    <script src="Common/common.services.js"></script>
+    <script src="Common/ideaResource.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/ctrls/homeCtrl.js"></script>
+    <script src="app/ctrls/productListCtrl.js"></script>
+    <script src="app/ctrls/testCtrl.js"></script>
+    <script src="app/ctrls/ideasCtrl.js"></script>
+    <script src="app/ctrls/IdeaFormCtrl.js"></script>
+</body>
+</html>

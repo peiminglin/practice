@@ -1,0 +1,26 @@
+﻿<form name="ideaForm.form" ng-submit="ideaForm.submit()">
+    <div class="form-group">
+        <label for="inputName">Name</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Idea Name" ng-model="ideaForm.idea.name" />
+    </div>
+    <div class="form-group">
+        <label for="inputDesc">Description</label>
+        <textarea class="form-control" id="inputDesc" ng-model="ideaForm.idea.description"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="inputCat">Catalogue</label>
+        <select class="form-control" id="inputCat" ng-model="ideaForm.idea.catalogue">
+            <option>UI</option>
+            <option>Test</option>
+            <option>Game</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="inputTag">Tags</label>
+        <input type="text" class="form-control" id="inputTag" placeholder="Tags, separate with space" ng-model="ideaForm.tagstring" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="reset" class="btn btn-default" ng-click="ideaForm.cancel()">Cancel</button>
+    </div>
+</form>

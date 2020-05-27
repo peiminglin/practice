@@ -1,0 +1,14 @@
+﻿<div>
+    <a class="btn btn-primary" ui-sref="ideaForm({id:0})">+ New Idea</a>
+    <hr />
+    <div class="panel panel-primary" ng-repeat="idea in ideas.ideas">
+        <div class="panel-heading">[{{idea.catalogue}}] {{idea.name}}</div>
+        <div class="panel-body">
+            <p>{{idea.description}}</p>
+            <span ng-repeat="tag in idea.tags">
+                <a class="label label-info">{{tag}}</a> 
+            </span>
+        </div>
+        <div class="panel-footer">{{idea.createDate}}</div>
+    </div>
+</div>
